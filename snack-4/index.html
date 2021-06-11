@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1 v-if=boolean >{{test}}</h1>
+        <button v-on:click=change>test</button>
+        <ul>
+            <li v-for='string in array'>{{string}}</li>
+        </ul>
+        <h2 v-for='number in 4'>numeric v-for</h2>
+        <input v-model=input type="text">
+        <p>{{input}}</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
